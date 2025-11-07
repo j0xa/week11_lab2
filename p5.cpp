@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the number of elements: ";
+    cin >> n;
+    vector<int> a(n);
+    vector<int> b(n);
+    vector<int> c(n);
+    for (int i = 0; i < n; i++) {
+        cout << "Enter the elements of a: ";
+        cin >> a[i];
+    }
+    for (int i = 0; i < n; i++) {
+        cout << "Enter the elements of b: ";
+        cin >> b[i];
+    }
+    for (int i = 0; i < n; i++) {
+        c[i] = a[i] + b[i];
+        cout << c[i] << " ";
+    }
+    return 0;
+}
